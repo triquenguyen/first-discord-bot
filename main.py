@@ -35,6 +35,6 @@ async def calc(ctx, num1, operator, num2):
       
   await ctx.send(f"{num1} {operator} {num2} = {result}")
 
-# with open("key.txt", "r") as readFile:
-#   botToken = readFile.readline() 
-client.run('MTA0MTUwNjgwMDUzMDM2MjQxOQ.GZIabg.tgavJlHFi98h5eiz50bj7_C7CWbMZ6A1oxD3ak')
+with open("key.txt", "r") as readFile:
+  botToken = readFile.readline() 
+client.run(botToken)
